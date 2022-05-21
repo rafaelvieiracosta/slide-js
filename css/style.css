@@ -12,7 +12,7 @@ img {
   display: block;
   max-width: 100%;
 }
-.wrapper {
+.slider-wrapper {
   overflow: hidden;
 }
 .slider {
@@ -43,4 +43,29 @@ img {
 .slider li.active {
   opacity: 1;
   transform: scale(1);
+}
+
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+[data-control="slide"] li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -999px;
+  background-color: #8f8da7;
+  margin: 5px;
+}
+
+[data-control="slide"] li.active a {
+  background-color: #0b0c12;
+}
+
+[data-control="slide"] li a:hover {
+  background-color: #0b0c12;
 }
