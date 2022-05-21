@@ -69,3 +69,71 @@ img {
 [data-control="slide"] li a:hover {
   background-color: #0b0c12;
 }
+
+.custom-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.custom-controls li {
+  opacity: 0.8;
+  transform: scale(0.8);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 2px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.3s;
+}
+
+.custom-controls li:hover {
+  opacity: 1;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.custom-controls li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.arrow-nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  background-color: transparent;
+}
+
+.arrow-nav button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+.arrow-nav button.prev {
+  background: #0b0c12 url("../img/arrow-left.svg") center center no-repeat;
+}
+
+.arrow-nav button.next {
+  background: #0b0c12 url("../img/arrow-right.svg") center center no-repeat;
+}
+
+.arrow-nav button:hover {
+  background-color: #242833;
+}
+
+.arrow-nav button.next:hover {
+  transform: translate3d(10px, 0, 0);
+}
+
+.arrow-nav button.prev:hover {
+  transform: translate3d(-10px, 0, 0);
+}
