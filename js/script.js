@@ -2,4 +2,4 @@ import Slider from "./slider.js";
 
 const slider = new Slider(".slider", ".slider-wrapper");
 slider.init();
-slider.changeSlide(4);
+slider.changeSlide(0);
