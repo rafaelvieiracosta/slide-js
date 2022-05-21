@@ -140,7 +140,7 @@ export class Slider {
     this.addSliderEvents();
     this.slidesConfig();
     this.addResizeEvent();
-    this.changeSlide(2);
+    this.changeSlide(1);
     return this;
   }
 }
